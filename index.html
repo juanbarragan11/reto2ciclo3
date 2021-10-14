@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reto2 Ciclo3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funcionesbike.js"></script>
+    <script type="text/javascript" src="js/funcionescliente.js"></script>
+    <script type="text/javascript" src="js/funcionesmessage.js"></script>
+
+</head>
+<body>
+    <h1>Interfaz Reto 2</h1>
+    <h3>Info Bicicleta</h3>
+    <div id = resultadoBicicleta></div>
+
+    <div>
+        <input type="number" id="id" placeholder="id">
+        <input type="text" id="brand" placeholder="brand">
+        <input type="number" id="model" placeholder="model">
+        <input type="number" id="category_id" placeholder="category_id">
+        <input type="text" id="name" placeholder="name">
+    </div>
+
+    <button onclick="agregarInfoBicicleta()">Agregar</button>
+    <button onclick="actualizarInfoBicicleta()">Actualizar</button>
+    <button onclick="traerInformacionBicicleta()">Consultar</button>
+
+
+
+    <h3>Info Cliente</h3>
+    <div id = resultadoCliente></div>
+
+    <div>
+        <input type="number" id="idCliente" placeholder="id">
+        <input type="text" id="nameCliente" placeholder="name">
+        <input type="text" id="email" placeholder="email">
+        <input type="number" id="age" placeholder="age">
+    </div>
+
+    <button onclick="agregarInfoCliente()">Agregar</button>
+    <button onclick="actualizarInfoCliente()">Actualizar</button>
+    <button onclick="traerInformacionCliente()">Consultar</button>
+
+
+    <h3>Info Mensaje</h3>
+    <div id="resultadoMensaje"></div>
+    
+    <div>
+        <input type="number" id="idMensaje" placeholder="id">
+        <input type="text" id="messagetext" placeholder="messagetext">
+    </div>
+
+    <button onclick="agregarInfoMensaje()">Agregar</button>
+    <button onclick="actualizarInfoMensaje()">Actualizar</button>
+    <button onclick="traerInformacionMensaje()"> Consultar </button>
+
+</body>
+
+</html>
